@@ -8,6 +8,7 @@ import { LoginComponent } from './login/login.component';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { ModalModule } from 'ngx-bootstrap/modal';
+import { AppRoutingModule } from './app-routing.module';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { ModalModule } from 'ngx-bootstrap/modal';
     BrowserModule,
     BsDropdownModule.forRoot(),
     TooltipModule.forRoot(),
-    ModalModule.forRoot()
+    ModalModule.forRoot(),
+    AppRoutingModule
   ],
   exports: [BsDropdownModule, TooltipModule, ModalModule],
   providers: [],
