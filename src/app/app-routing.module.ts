@@ -6,12 +6,9 @@ import { PessoaComponent } from './pessoa/pessoa.component';
 
 const routes : Routes = [
   {path: 'login', component: LoginComponent},
-  {path: 'pessoa', component: PessoaComponent}
+  {path: 'pessoa', component: PessoaComponent},
+  { path: '**', redirectTo: ''}
 ]
 
-
-@NgModule({
-   exports:[ RouterModule ],
-   imports : [RouterModule.forRoot(routes)]
-})
 export class AppRoutingModule { }
+export const ModuloRoteador = RouterModule.forRoot(routes)
