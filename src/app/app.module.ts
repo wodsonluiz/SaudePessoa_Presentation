@@ -9,9 +9,6 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { ModalModule } from 'ngx-bootstrap/modal';
 
-import { ModuloRoteador } from './app-routing.module'
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,8 +19,7 @@ import { ModuloRoteador } from './app-routing.module'
     BrowserModule,
     BsDropdownModule.forRoot(),
     TooltipModule.forRoot(),
-    ModalModule.forRoot(),
-    ModuloRoteador
+    ModalModule.forRoot()
   ],
   exports: [BsDropdownModule, TooltipModule, ModalModule],
   providers: [],
