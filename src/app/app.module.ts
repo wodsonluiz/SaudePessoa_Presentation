@@ -1,3 +1,4 @@
+import { FraseService } from './frase.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -10,13 +11,16 @@ import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { HttpClientModule }    from '@angular/common/http';
 
-import { AppRoutingModule } from './app-routing.module'
+
+import { AppRoutingModule } from './app-routing.module';
+import { FraseComponent } from './frase/frase.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     PessoaComponent,
     LoginComponent,
+    FraseComponent,
   ],
   imports: [
     BrowserModule,
